@@ -1,0 +1,32 @@
+/* mobile and general layout*/
+nav{
+    flex-flow: row wrap;
+    display: flex;
+    width: 100%;
+}
+
+nav div{
+    flex: 1 1 300px;
+}
+
+nav div a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 1.8em;
+}
+
+nav div a:hover{
+    color:black;
+    background-color: #fff5f9;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* 600px screen layout*/
+@media only screen and (min-width: 600px){
+    nav div{
+        flex: 1 1 150px;
+    }
+}

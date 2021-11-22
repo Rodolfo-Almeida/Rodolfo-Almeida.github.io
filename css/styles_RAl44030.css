@@ -1,0 +1,199 @@
+/* mobile and general layout*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0 auto;
+    width: 90%;
+}
+
+header{
+    width: 100%;
+    padding: 5px 0;
+}
+
+nav{
+    padding: 10px 0;
+}
+
+article#home section{
+    padding: 10px 10px;
+}
+
+section#manaus, section#vancouver{
+    background-color: #f03b7d;
+    border-radius: 10px;
+}
+
+article#videoTutorial{
+    padding: 10px 10px;
+}
+
+iframe{
+    width: 100%;
+    height: 315px;
+}
+
+article#contact h3{
+    padding: 10px 10px;
+    text-align: center;
+}
+
+form{
+    width: 100%;
+}
+
+form fieldset{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+fieldset > *{
+    margin: 2px 0;
+}
+
+fieldset legend{
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color:#f03b7d;
+    border-radius: 10px;
+}
+
+fieldset input, fieldset textarea{
+    width: 100%;
+}
+
+input#reset, input#submit{
+    font-weight: bold;
+    font-size: 1.01em;
+    border-radius: 5px;
+    background-color: #fff5f9;
+}
+
+footer{
+    text-align: right;
+    padding: 10px;
+    clear: both;
+}
+
+/* 600px screen layout*/
+@media only screen and (min-width: 600px){
+    section#manaus{
+        display: flex;
+    }
+
+    section#manaus div{
+        float: left;
+        width: 55%;
+        padding-right: 10px;
+    }
+
+    figure#manaus{
+        float: left;
+        width: 45%;
+    }
+
+    section#edinburgh{
+        display: flex;
+    }
+    
+    section#edinburgh div{
+        float: left;
+        width: 35%;
+        padding-left: 10px;
+    }
+
+    figure#edinburgh{
+        float: left;
+        width: 65%;
+        clear: both;
+    }
+
+    section#vancouver{
+        display: flex;
+    }
+
+    section#vancouver div{
+        float: left;
+        width: 45%;
+        clear: both;
+        padding-right: 10px;
+    }
+
+    figure#vancouver{
+        float: left;
+        width: 55%;
+    }
+
+    iframe{
+        height: 400px;
+    }
+
+    input#submit{
+        margin-right: 1%;
+        float: left;
+        width: 49%;
+    }
+
+    input#reset{
+        margin-left: 1%;
+        float: left;
+        width: 49%;
+    }
+
+    form{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* 900px screen layout*/
+@media only screen and (min-width: 900px){
+    section#manaus div{
+        width: 65%;
+    }
+
+    figure#manaus{
+        width: 35%;
+    }
+
+    section#edinburgh div{
+        width: 45%;
+    }
+
+    figure#edinburgh{
+        width: 55%;
+    }
+
+    section#vancouver div{
+        width: 55%;
+    }
+
+    figure#vancouver{
+        width: 45%;
+    }
+
+    article#videoTutorial div{
+        float: left;
+        width: 50%;
+    }
+
+    div#video1{
+        padding-right: 10px;
+    }
+
+    div#video2{
+        padding-left: 10px;
+    }
+}
+
